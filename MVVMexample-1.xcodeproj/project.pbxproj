@@ -13,6 +13,10 @@
 		7191489B28326BD800FD1228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7191489928326BD800FD1228 /* Main.storyboard */; };
 		7191489D28326BD900FD1228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7191489C28326BD900FD1228 /* Assets.xcassets */; };
 		719148A028326BDA00FD1228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7191489E28326BD900FD1228 /* LaunchScreen.storyboard */; };
+		719148A8283285AE00FD1228 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719148A7283285AE00FD1228 /* UserModel.swift */; };
+		719148AA2832860000FD1228 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719148A92832860000FD1228 /* CellViewModel.swift */; };
+		719148AD283286D800FD1228 /* tblViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719148AB283286D800FD1228 /* tblViewCell.swift */; };
+		719148AE283286D800FD1228 /* tblViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 719148AC283286D800FD1228 /* tblViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7191489C28326BD900FD1228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7191489F28326BD900FD1228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		719148A128326BDA00FD1228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		719148A7283285AE00FD1228 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		719148A92832860000FD1228 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		719148AB283286D800FD1228 /* tblViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblViewCell.swift; sourceTree = "<group>"; };
+		719148AC283286D800FD1228 /* tblViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tblViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		7191489228326BD700FD1228 /* MVVMexample-1 */ = {
 			isa = PBXGroup;
 			children = (
+				719148B1283287DD00FD1228 /* View */,
+				719148B0283287C100FD1228 /* ViewModel */,
+				719148AF283287B000FD1228 /* Model */,
 				7191489328326BD700FD1228 /* AppDelegate.swift */,
 				7191489528326BD700FD1228 /* SceneDelegate.swift */,
-				7191489728326BD700FD1228 /* ViewController.swift */,
 				7191489928326BD800FD1228 /* Main.storyboard */,
 				7191489C28326BD900FD1228 /* Assets.xcassets */,
 				7191489E28326BD900FD1228 /* LaunchScreen.storyboard */,
 				719148A128326BDA00FD1228 /* Info.plist */,
 			);
 			path = "MVVMexample-1";
+			sourceTree = "<group>";
+		};
+		719148AF283287B000FD1228 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				719148A7283285AE00FD1228 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		719148B0283287C100FD1228 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				719148A92832860000FD1228 /* CellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		719148B1283287DD00FD1228 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7191489728326BD700FD1228 /* ViewController.swift */,
+				719148AB283286D800FD1228 /* tblViewCell.swift */,
+				719148AC283286D800FD1228 /* tblViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				719148A028326BDA00FD1228 /* LaunchScreen.storyboard in Resources */,
+				719148AE283286D800FD1228 /* tblViewCell.xib in Resources */,
 				7191489D28326BD900FD1228 /* Assets.xcassets in Resources */,
 				7191489B28326BD800FD1228 /* Main.storyboard in Resources */,
 			);
@@ -141,6 +178,9 @@
 				7191489828326BD700FD1228 /* ViewController.swift in Sources */,
 				7191489428326BD700FD1228 /* AppDelegate.swift in Sources */,
 				7191489628326BD700FD1228 /* SceneDelegate.swift in Sources */,
+				719148AA2832860000FD1228 /* CellViewModel.swift in Sources */,
+				719148A8283285AE00FD1228 /* UserModel.swift in Sources */,
+				719148AD283286D800FD1228 /* tblViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,6 +5,7 @@
 //  Created by Ahmet WOW on 16/05/2022.
 //
 /// Source : https://www.youtube.com/watch?v=nWSHWWV8Nas
+/// 
 import Foundation
 
 /// İzlediğim video da bu ViewModel'i  ViewController'da yazıyor.
